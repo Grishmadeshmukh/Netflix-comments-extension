@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Netflix Basic Extension",
+  "version": "1.0",
+  "description": "Basic functionality for Netflix interaction.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["*://*.netflix.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.netflix.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "icon.png"
+  }
+}
